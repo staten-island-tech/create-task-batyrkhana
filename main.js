@@ -1,0 +1,1 @@
+// based on a questionaire, how the user feels and all that, the program will output various quotes and suggestions in order to feel better
