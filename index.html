@@ -13,12 +13,42 @@
     </div>
     <div class="quote-search">
         <h2 class="quote-seach-title"></h2>
-        <form class="form-search" action="">
-            <label for=""></label>
-            <input type="text">
-            <label for=""></label>
-            <input type="text">
-        </form>
+        <form action="" class="form" id="formFeeling">
+            <div class="user-question q-character-pageNum">
+                <label for="q-user-feeling-input" class="q-character-label" id="q-character-pageNum-label">Page Number</label><br>
+                <select name="Feelings" class = "q-user-input" id="q-user-feeling-input">
+                    <option value="Happy">Happy</option>
+                    <option value="Sad">Sad</option>
+                    <option value="Angry">Angry</option>
+                    <option value="Bored">Bored</option>
+                </select>
+            </div>
+            <div class="user-question q-character-name">
+                <label for="q-character-name-input" class="q-character-label" id="q-character-name-label">Character Name</label><br>
+                <input type="text" name="characterName" class="q-character-input" id="q-character-name-input"><br>
+            </div>
+            <div class="user-question q-character-status">
+              <label for="q-character-status-input" class="q-character-label" id="q-character-status-label">Character
+                Status</label><br>
+              <input type="text" name="characterStatus" class="q-character-input" id="q-character-status-input"><br>
+            </div>
+            <div class="user-question q-character-species">
+              <label for="q-character-species-input" class="q-character-label" id="q-character-species-label">Character
+                Specie</label><br>
+              <input type="text" name="characterSpecies" class="q-character-input" id="q-character-species-input"><br>
+            </div>
+            <div class="user-question q-character-gender">
+              <label for="q-character-gender-input" class="q-character-label" id="q-character-gender-label">Character
+                Gender</label><br>
+              <input type="text" name="characterGender" class="q-character-input" id="q-character-gender-input">
+            </div>
+            <div class="user-question q-character-location">
+              <label for="q-character-location-input" class="q-character-label" id="q-character-location-label">Character
+                Location</label><br>
+              <input type="text" name="characterLocation" class="q-character-input" id="q-character-location-input">
+            </div>
+            <input type="submit" class="character-submit" id="q-character-submit" value="SUBMIT" id="submit">
+          </form>
     </div>
     <iframe style="border-radius:12px; margin:1rem" src="https://open.spotify.com/embed/playlist/37i9dQZF1DX5bjCEbRU4SJ?utm_source=generator&theme=0" width="48%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
     <style>
