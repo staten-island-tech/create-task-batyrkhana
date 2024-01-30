@@ -1,69 +1,49 @@
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Batyrkhan Alimzhanov - APCSP Create Task</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Batyrkhan Alimzhanov - APCSP Create Task</title>
 </head>
 <body>
-    <h1 class="main-header">Batyrkhan's Mental Health Manager :)</h1>
+  <h1 class="main-header">Batyrkhan's Mental Health Manager :)</h1>
+  <div class="main-content">
     <div class="main-description">
-        <h3>Hello, welcome to my website! I have created in order to provide motivation to those struggling with mental health and those who are experiencing difficulties.
-            The website has various input fields which you can use to find inspirational quotes. Please use it however much you like. Wish you all the best!
-        </h3>
+      <h3>Hello, welcome to my website! I have created in order to provide motivation to those struggling with mental
+        health and those who are experiencing difficulties.
+        The website has various input fields which you can use to find quotes that others have said when they were in 
+        a similar mood as you. Please use it however much you like. Wish you all the best!
+      </h3>
     </div>
     <div class="quote-search">
-        <h2 class="quote-seach-title"></h2>
-        <form action="" class="form" id="formFeeling">
-            <div class="user-question q-character-pageNum">
-                <label for="q-user-feeling-input" class="q-character-label" id="q-character-pageNum-label">Page Number</label><br>
-                <select name="Feelings" class = "q-user-input" id="q-user-feeling-input">
-                    <option value="Happy">Happy</option>
-                    <option value="Sad">Sad</option>
-                    <option value="Angry">Angry</option>
-                    <option value="Bored">Bored</option>
-                </select>
-            </div>
-            <div class="user-question q-character-name">
-                <label for="q-character-name-input" class="q-character-label" id="q-character-name-label">Character Name</label><br>
-                <input type="text" name="characterName" class="q-character-input" id="q-character-name-input"><br>
-            </div>
-            <div class="user-question q-character-status">
-              <label for="q-character-status-input" class="q-character-label" id="q-character-status-label">Character
-                Status</label><br>
-              <input type="text" name="characterStatus" class="q-character-input" id="q-character-status-input"><br>
-            </div>
-            <div class="user-question q-character-species">
-              <label for="q-character-species-input" class="q-character-label" id="q-character-species-label">Character
-                Specie</label><br>
-              <input type="text" name="characterSpecies" class="q-character-input" id="q-character-species-input"><br>
-            </div>
-            <div class="user-question q-character-gender">
-              <label for="q-character-gender-input" class="q-character-label" id="q-character-gender-label">Character
-                Gender</label><br>
-              <input type="text" name="characterGender" class="q-character-input" id="q-character-gender-input">
-            </div>
-            <div class="user-question q-character-location">
-              <label for="q-character-location-input" class="q-character-label" id="q-character-location-label">Character
-                Location</label><br>
-              <input type="text" name="characterLocation" class="q-character-input" id="q-character-location-input">
-            </div>
-            <input type="submit" class="character-submit" id="q-character-submit" value="SUBMIT" id="submit">
-          </form>
+      <h2 class="quote-seach-title"></h2>
+      <form action="" class="form" id="formGeneral">
+        <div class="user-question-div">
+          <div class="user-question q-user-feeling">
+            <label for="q-user-feeling-input" class="q-user-label" id="q-user-feeling-label">How are you feeling right now?</label><br>
+            <select name="Feelings" class="q-user-input" id="q-user-feeling-input">
+              <option value="Happy">Happy</option>
+              <option value="Sad">Sad</option>
+              <option value="Angry">Angry</option>
+              <option value="Bored">Bored</option>
+              <option value="Scared">Scared</option>
+            </select>
+          </div>
+          <div class="user-question q-user-ageGroup">
+            <label for="q-user-ageGroup-input" class="q-user-label" id="q-user-ageGroup-label">How old are you?</label><br>
+            <select name="Age" class="q-user-input" id="q-user-ageGroup-input">
+              <option value="young">40 or less</option>
+              <option value="old">More than 40</option>
+            </select>
+          </div>
+        </div>   
+        <input type="submit" class="user-submit" id="q-user-submit" value="SUBMIT" id="submit">
+      </form>
+      <button id="history-button">Show History</button>
+      <button id="hide-history-button">Hide History</button>
     </div>
-    <iframe style="border-radius:12px; margin:1rem" src="https://open.spotify.com/embed/playlist/37i9dQZF1DX5bjCEbRU4SJ?utm_source=generator&theme=0" width="48%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-    <style>
-        .main-header, .main-description, .quote-search {
-            margin: 1rem;
-            color: azure;
-            border-radius:12px;
-            background-color: rgb(47, 44, 44);
-            padding: 2rem;
-        }
-        .quote-search {
-            width: 40%;
-        }
-
-    </style>
-    <script type="module" src="main.js"></script>
+  </div>
+  <div id="main-output-card"></div>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script type="module" src="main.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 </body>
-</html>
